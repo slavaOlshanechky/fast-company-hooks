@@ -43,7 +43,6 @@ const ReactChildrenExample = () => {
                 <TextField name="email" label='email'/>
                 <TextField name="password" label='password' type='password'/>
             </FormComponent>
-
         </CardWrapper>
     );
 };
