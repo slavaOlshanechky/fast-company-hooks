@@ -1,7 +1,11 @@
 import React from "react";
+import Component from "./SimpleComponent";
+
 import CollapseWrapper from "../common/collapse";
+import withBootstrapCard from "./withBootstrapCard";
 
 const HocExercise = () => {
+    const ModifiedComponent = withBootstrapCard(Component)
     return (
         <CollapseWrapper title="Упражнение">
             <p className="mt-3">
@@ -47,6 +51,7 @@ const HocExercise = () => {
                     <code>user</code> в <code>localStorage</code>
                 </li>
             </ul>
+            <ModifiedComponent/>
         </CollapseWrapper>
     );
 };
